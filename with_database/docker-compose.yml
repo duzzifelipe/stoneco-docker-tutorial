@@ -1,0 +1,26 @@
+version: "3"
+
+volumes:
+  postgres_data:
+    driver: local
+
+services:
+  with_database_postgres:
+    image: postgres:11.9-alpine
+    ports:
+      - 5432:5432
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: with_database_dev
+  with_database_application:
+    build: ./
+    ports:
+      - 4000:4000
+    environment:
+      DATABASE_URL: pgsq://postgres:postgres@with_database_postgres/with_database_dev
+      SECRET_KEY_BASE: vzzGohHerW48zQLOSFXsegdBh5GgGhcEsHyhYb+F4kfMBgmTrU6Gpud30k+7fRTb
+      DATABASE_SSL: "false"
+

@@ -1,0 +1,16 @@
+version: "3"
+
+volumes:
+  postgres_data:
+    driver: local
+
+services:
+  with_database_postgres:
+    image: postgres:11.9-alpine
+    ports:
+      - 5432:5432
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
