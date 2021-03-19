@@ -1,4 +1,6 @@
-# Criando uma própria imagem (https://docs.docker.com/engine/reference/builder/)
+# Criando uma própria imagem
+
+Lista completa de comandos: https://docs.docker.com/engine/reference/builder/
 
 Os principais comandos usados:
 
