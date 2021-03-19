@@ -4,7 +4,7 @@ Lista completa de comandos: https://docs.docker.com/compose/reference/
 
 ### Subir o ambiente
 
-```
+```sh
 docker-compose up
 ```
 > -d para rodar em background
@@ -15,18 +15,18 @@ docker-compose up
 Algumas vezes podemos alterar o nosso projeto e, caso esteja iniciando com Docker, não vai atualizar sozinho - dado que está compilado.
 Precisamos rodar o fluxo de build de novo e fazer recreate no container.
 
-```
+```sh
 docker-compose build with_database_application
 ```
 > aceita opção --no-cache
 
-```
+```sh
 docker-compose up --force-recreate --no-deps -d with_database_application
 ```
 
 ### Desligar
 
-```d
+```sh
 docker-compose down
 ```
 

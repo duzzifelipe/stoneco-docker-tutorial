@@ -3,24 +3,26 @@
 ## Comandos de Imagens
 
 ### Exibir as imagens baixadas na máquina
-```
+
+```sh
 docker image list
 ```
-
 ### Para baixar uma nova imagem
-```
+
+```sh
 docker pull [IMG]
 ```
 > exemplo: hexpm/elixir:1.10.4-erlang-23.2.2-alpine-3.12.1
 
 ### Remover uma imagem
-```
+
+```sh
 docker image rm [IMG]
 docker rmi [IMG]
 ```
 
 ### Enviando imagem para o registry
-```
+```sh
 docker image tag [IMG] host:port/path/IMG:version
 docker push [new-tag]
 ```
@@ -30,30 +32,28 @@ docker push [new-tag]
 
 ### [ps](https://docs.docker.com/engine/reference/commandline/ps/)
 
-```
+```sh
 docker ps
 ```
 > -a para listar também os containers parados
 
-
 ### [start](https://docs.docker.com/engine/reference/commandline/start/)
 
-```
+```sh
 docker start|stop|restart
 ```
 > existem também o stop e restart
 
 ### [Build](https://docs.docker.com/engine/reference/commandline/build/)
 
-```
+```sh
 docker build .
 ```
 > -t para adicionar uma tag
 
-
 ### [Run](https://docs.docker.com/engine/reference/run/)
 
-```
+```sh
 docker run [IMAGE]
 ```
 > --env para passar variáveis
