@@ -1,6 +1,4 @@
-# Rodando o primeiro App
-
-Comandos principais do docker:
+# Principais comandos do docker:
 
 ## Comandos de Imagens
 
@@ -62,8 +60,15 @@ docker run [IMAGE]
 > -d para rodar "detached"
 > -p expor portas
 
+# Rodando o primeiro App
 
-# Vantagens
+Entre na pasta `./no_database` e siga com as instruções do `README.md`.
+
+ - faremos o build da imagem a partir do Dockerfile presente na pasta;
+ - rodaremos a aplicação com o docker-run;
+ - um "projeto base" de elixir + phoenix será iniciado em `http://127.0.0.1:4000`.
+
+### Vantagens
 
 - mesmas dependências em ambientes diferentes;
 - facilidade de configuração do ambiente;
