@@ -1,1 +1,19 @@
-# ?
+version: "3"
+
+services:
+  node_db_mysql:
+    image: mysql:8.0
+    ports:
+      - 3306:3306
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: mysql
+      MYSQL_USER: mysql
+      MYSQL_PASSWORD: mysql
+      MYSQL_DATABASE: node_db_dev
+  node_db_app:
+    build: ./
+    ports:
+      - 1337:1337
+    environment:
+      - sails_datastores__default__url=mysql://mysql:mysql@node_db_mysql:3306/node_db_dev
