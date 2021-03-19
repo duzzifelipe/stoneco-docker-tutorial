@@ -1,14 +1,14 @@
-# Starting with Docker
+# Introdução ao Docker
 
-This project is meant to show some benefits and our daily usage of docker facilities. It planned to be used on [Stone's Elixir training program](https://canaltech.com.br/cursos/stone-cria-programa-de-formacao-em-elixir-para-treinar-e-contratar-30-pessoas-178215/).
+Esse repositório tem uma série de documentos que mostram como configurar um ambiente docker, além alguns comandos e sintaxe que usamos no dia a dia. O intuito da criação é ser utilizado no [Programa de Formação em Elixir da Stone](https://canaltech.com.br/cursos/stone-cria-programa-de-formacao-em-elixir-para-treinar-e-contratar-30-pessoas-178215/).
 
 ## Content
 
-1. [Clonning this repository](./tutorials/01-clone.md);
-2. [Setting up Docker](./tutorials/02-setup.md);
-3. [Running the first app](./tutorials/03-first-app.md);
-4. [Container explanation](./tutorials/04-container.md);
-5. [Creating an image](./tutorials/05-creating-image.md);
-6. [Running a docker-compose environment](./tutorials/06-docker-compose.md);
-7. [Writing a docker-compose file](./tutorials/07-writing-docker-compose.md);
-8. [How it works](./tutorials/08-how-it-works.md).
+1. [Clonando este repositório](./tutorials/01-clone.md);
+2. [Instalação do Docker](./tutorials/02-setup.md);
+3. [Comandos para rodar a primeira aplicação](./tutorials/03-first-app.md);
+4. [Algumas explicações](./tutorials/04-container.md);
+5. [Criando uma imagem](./tutorials/05-creating-image.md);
+6. [Rodando um ambiente com docker-compose](./tutorials/06-docker-compose.md);
+7. [Escrevendo um arquivo docker-compose](./tutorials/07-writing-docker-compose.md);
+8. [Como funciona](./tutorials/08-how-it-works.md).
