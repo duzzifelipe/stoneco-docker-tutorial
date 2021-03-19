@@ -10,7 +10,7 @@ Você precisa, então:
 - Começar com uma image base de python (`python:3.7.10-alpine3.12`);
 - Instalar a biblioteca do Django usando pip (`pip3 install django`);
 - Copiar o arquivo `manage.py` e a pasta `sample_server`;
-- Expor a porta 8000;
+- Expor a porta `8000`;
 - Rodar o comando `python3 manage.py runserver` para iniciar a aplicação.
 
 A fim de padronizar a execução, precisaremos dos comandos de build e run:
