@@ -1,5 +1,7 @@
 # Principais comandos do docker:
 
+Lista completa de comandos: https://docs.docker.com/engine/reference/commandline/docker/
+
 ## Comandos de Imagens
 
 ### Exibir as imagens baixadas na máquina
