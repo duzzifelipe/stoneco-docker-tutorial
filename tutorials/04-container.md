@@ -2,7 +2,7 @@
  - É diferente de uma VM, que tem SO completo e depende de um hypervisor;
  - Ambiente isolado que permite fazer limitações de recursos;
   - O host "entra em contato" com as bibliotecas
-- 
+
 
 # O que é uma imagem
  - Formada por várias camadas (a cada instrução do Dockerfile), permitindo reutilização;
