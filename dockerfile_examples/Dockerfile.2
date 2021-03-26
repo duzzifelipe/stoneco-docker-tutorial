@@ -1,0 +1,18 @@
+FROM hexpm/elixir:1.10.4-erlang-23.2.2-alpine-3.12.1 AS first_image
+
+ENV HELLO=world
+
+ARG NAME
+
+RUN test -n "$NAME"
+
+ENV NAME=${NAME}
+
+RUN echo "hello" > file.txt
+
+
+FROM hexpm/elixir:1.10.4-erlang-23.2.2-alpine-3.12.1
+
+COPY --from=first_image file.txt file.txt
+
+RUN cat file.txt
