@@ -52,7 +52,7 @@ COPY [--chown=user:group] src dest
 Igual ao COPY, mas permite copiar, além de arquivo e pasta, URLS e arquivos tar (que são extraídos)
 
 ```dockerfile
-COPY [--chown=user:group] src dest
+ADD [--chown=user:group] src dest
 ```
 
 ### RUN
