@@ -1,0 +1,26 @@
+version: "3"
+
+volumes:
+  postgres_data:
+    driver: local
+
+services:
+  with_database_postgres:
+    image: postgres:11.9-alpine
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: with_database_dev
+  with_database_application:
+    build: ./
+    volumes:
+      - ./custom_folder:/tmp/custom_folder
+    depends_on: with_database_postgres
+    environment:
+      DATABASE_URL: pgsq://postgres:postgres@with_database_postgres/with_database_dev
+      SECRET_KEY_BASE: vzzGohHerW48zQLOSFXsegdBh5GgGhcEsHyhYb+F4kfMBgmTrU6Gpud30k+7fRTb
+      DATABASE_SSL: "false"
+    links:
+      - with_database_postgres:with_database_postgres

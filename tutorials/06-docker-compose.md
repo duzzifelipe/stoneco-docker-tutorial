@@ -48,5 +48,16 @@ docker-compose down
    - `docker-compose run with_database_application /app/bin/with_database eval "WithDatabase.ReleaseTask.migrate()"`
  - Exemplo com recreate;
  - Subir o docker compose somente com o banco de dados (`docker-compose up with_database_postgres`);
- - Configurar volume para ler um arquivo do host;
+ - Configurar volume para ler um arquivo do host (./custom_folder);
+   - rodar o segundo dockerfile
+   - `docker-compose exec with_database_application /app/bin/with_database eval "\"/tmp/custom_folder/file.txt\" |> File.read!() |> IO.puts()"`
+   - rodar o mesmo comando na aplicação sem mount
  - Criar uma network separada;
+
+
+### Usando o comando de scale (desde que não esteja em host)
+  - `docker-compose -f docker-compose-net.yml up`
+  - `docker-compose -f docker-compose-net.yml scale with_database_application=2`
+
+
+### Drivers de network (https://docs.docker.com/network/#network-drivers)
