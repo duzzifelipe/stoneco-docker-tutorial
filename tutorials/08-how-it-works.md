@@ -1,1 +1,0 @@
-# Como tudo funciona

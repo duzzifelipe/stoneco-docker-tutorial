@@ -60,4 +60,5 @@ docker-compose down
   - `docker-compose -f docker-compose-net.yml scale with_database_application=2`
 
 
-### Drivers de network (https://docs.docker.com/network/#network-drivers)
+### Referência de sintaxe:
+ - https://docs.docker.com/compose/compose-file/compose-file-v3/

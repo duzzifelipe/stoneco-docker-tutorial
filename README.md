@@ -10,5 +10,4 @@ Esse repositório tem uma série de documentos que mostram como configurar um am
 4. [Algumas explicações](./tutorials/04-container.md);
 5. [Criando uma imagem](./tutorials/05-creating-image.md);
 6. [Rodando um ambiente com docker-compose](./tutorials/06-docker-compose.md);
-7. [Escrevendo um arquivo docker-compose](./tutorials/07-writing-docker-compose.md);
-8. [Como funciona](./tutorials/08-how-it-works.md).
+7. [Escrevendo um arquivo docker-compose](./tutorials/07-writing-docker-compose.md).
