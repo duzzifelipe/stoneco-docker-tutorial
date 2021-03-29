@@ -20,7 +20,7 @@ services:
     ports:
       - 4000:4000
     environment:
-      DATABASE_URL: pgsq://postgres:postgres@with_database_postgres/with_database_dev
+      DATABASE_URL: pgsql://postgres:postgres@with_database_postgres/with_database_dev
       SECRET_KEY_BASE: vzzGohHerW48zQLOSFXsegdBh5GgGhcEsHyhYb+F4kfMBgmTrU6Gpud30k+7fRTb
       DATABASE_SSL: "false"
 

@@ -17,7 +17,8 @@ services:
     build: ./
     volumes:
       - ./custom_folder:/tmp/custom_folder
-    depends_on: with_database_postgres
+    depends_on:
+      - with_database_postgres
     environment:
       DATABASE_URL: pgsq://postgres:postgres@with_database_postgres/with_database_dev
       SECRET_KEY_BASE: vzzGohHerW48zQLOSFXsegdBh5GgGhcEsHyhYb+F4kfMBgmTrU6Gpud30k+7fRTb
