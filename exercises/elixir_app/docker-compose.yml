@@ -1,0 +1,13 @@
+# é necessário subir um serviço com imagem do mysql
+# - a imagem deve ser mysql:8.0
+# - deve expor a porta 3306
+# - deve executar um command "--default-authentication-plugin=mysql_native_password"
+# - deve configurar as seguintes variáveis de ambiente:
+#     MYSQL_ROOT_PASSWORD: mysql
+#     MYSQL_USER: mysql
+#     MYSQL_PASSWORD: mysql
+#     MYSQL_DATABASE: elixir_app_dev
+# e um segundo serviço para a aplicação fazendo build no dockerfile
+# - a aplicação precisa de um DATABASE_URL como environment
+#   - o valor deve ser mysql://mysql:mysql@app_database/elixir_app_dev (de acordo com a imagem do mysql)
+# - deve expor a porta 4000
